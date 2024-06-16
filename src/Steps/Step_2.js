@@ -11,7 +11,7 @@ export default function SelectPlan() {
             <p className="step-about">You have the option of monthly or yearly billing.</p>
             <div className='plans'>
                 <div onClick={() => setPlan({ ...plan, plan: "arcade", planPrice: prices.arcade })} className={plan.plan === "arcade" ? "plan-card choosen-plan" : "plan-card"}>
-                    <img className="plan-icon" src='/imgs/icon-arcade.svg' alt='Arcade icon' />
+                    <img className="plan-icon" src='../../public/imgs/icon-arcade.svg' alt='Arcade icon' />
                     <div className='plan-info'>
                         <span className='plan-title'>Arcade</span>
                         <span className='price'>{plan.billingWay === "monthly" ? `$${prices.arcade}/mo` : "$90/yr"}</span>
@@ -19,7 +19,7 @@ export default function SelectPlan() {
                     </div>
                 </div>
                 <div onClick={() => setPlan({ ...plan, plan: "advanced", planPrice: prices.advanced })} className={plan.plan === "advanced" ? "plan-card choosen-plan" : "plan-card"}>
-                    <img className="plan-icon" src='/imgs/icon-advanced.svg' alt="..." />
+                    <img className="plan-icon" src='../../public/imgs/icon-advanced.svg' alt="..." />
                     <div className='plan-info'>
                         <span className='plan-title'>Advanced</span>
                         <span className='price'>{plan.billingWay === "monthly" ? `$${prices.advanced}/mo` : "$120/yr"}</span>
@@ -27,7 +27,7 @@ export default function SelectPlan() {
                     </div>
                 </div>
                 <div onClick={() => setPlan({ ...plan, plan: "pro", planPrice: prices.pro })} className={plan.plan === "pro" ? "plan-card choosen-plan" : "plan-card"}>
-                    <img className="plan-icon" src='/imgs/icon-pro.svg' alt='...' />
+                    <img className="plan-icon" src='../../public/imgs/icon-pro.svg' alt='...' />
                     <div className='plan-info'>
                         <span className='plan-title'>Pro</span>
                         <span className='price'>{plan.billingWay === "monthly" ? `$${prices.pro}/mo` : "$150/yr"}</span>
