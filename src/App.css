@@ -412,7 +412,7 @@ input:checked + .slider:before {
 @media screen and (max-width: 430px) {
   .App {
     width: unset;
-    height: 110vh;
+    height: unset;
   }
   .container {
     all: unset;
